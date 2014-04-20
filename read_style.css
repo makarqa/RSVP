@@ -1,0 +1,97 @@
+body{
+    background:url(bg.gif);
+}
+
+#buttons{
+	margin: 10px auto 0;
+}
+
+#word {
+	border:1px solid red;
+	border-width:6px;
+	border-radius:6px;
+	width:300px;
+	height:70px;
+	font:30pt Calibri;
+	padding:15px 20px 0px 20px;
+	margin: 0 auto;
+	background:white;
+}
+
+#reader b{
+	color:red;
+}
+
+#start, #pause{
+   background: red;
+   color:white;
+   padding: 10px; 
+   border:0px;
+   font-size:18px;
+   border-radius:5px;
+   font-family:verdana;
+}
+
+#start:hover, #pause:hover {
+   background: green;
+   color:white;
+}
+
+#text{
+	border-width:0px;
+	font:13px Verdana;
+	border:7px solid red;
+	border-radius:5px;
+}
+
+#txtarea{
+    border:7px solid red;
+	border-radius:7px;
+	margin: 10px auto 0;
+}
+
+#select_speed{
+    margin:5px auto -20px;
+    padding: 0px 10px 0px 20px;
+    border: 2px solid red;
+	border-radius: 5px;
+    font: 14pt Verdana;
+	color: white;
+    background: red;
+    padding: 5px;
+}
+
+progress {
+	width: 400px;
+	height: 14px;
+	margin: 30px auto ;
+	display: block;
+	-webkit-appearance: none;
+	border: none;
+}
+
+progress::-webkit-progress-bar {
+	background: black;
+	border-radius: 20px;
+	padding: 2px;
+	box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+}
+
+progress::-webkit-progress-value {
+	border-radius: 20px;
+	box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+	background:
+		-webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+		-webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+		-webkit-linear-gradient(left, #ba7448, #c4672d);
+	
+	
+	background-size: 25px 14px, 100% 100%, 100% 100%;
+	-webkit-animation: move 5s linear 0 infinite;
+}
+
+@-webkit-keyframes move {
+	0% {background-position: 0px 0px, 0 0, 0 0}
+	100% {background-position: -100px 0px, 0 0, 0 0}
+}
+

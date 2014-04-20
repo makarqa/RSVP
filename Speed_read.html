@@ -1,0 +1,33 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="read_style.css">
+</head>
+<body align="center">
+<div id="word">
+Начнем читать?
+</div>
+<div id="buttons">
+<button onclick="start()" id="start">
+Да, начнем!
+</button>
+<button onclick="pause()" id="pause">
+Hемного подождем
+</button>
+</div>
+<div id="select">
+<select name="speed" id="select_speed">
+<option value="250">Медленно</option>
+<option value="200">Быстро</option>
+<option value="150">Быстрее</option>
+<option value="100">Что происходит?!</option>
+</select>
+</div>
+<div>
+<progress value="0" max="100" id="progress"></progress>
+</div>
+<script src="read_script.js"></script>
+<div>
+<textarea placeholder="Введите текст, который хотите прочитать." rows="28" cols="120" id="text"></textarea>
+</div>
+</body>
+</html>
